@@ -13,6 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // * Main Route
-Route::get('/', function () {
-    return view('User.index');
-});
+Route::get('/', [User::class ]);
