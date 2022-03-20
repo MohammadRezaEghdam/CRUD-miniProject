@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,4 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // * Main Route
-Route::get('/', [User::class ]);
+Route::get('/', [UserController::class ,'index'])->name('index');
+
+// * User Routes
+
