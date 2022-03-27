@@ -3,7 +3,7 @@
 <div class="container crud-table">
       <div class="clearfix">
         <div class="form-inline pull-left">
-          <button class="btn btn-success"><span class="glyphicon glyphicon-plus"> </span>Add more user</button>
+          <a class="btn btn-success" href="{{route('user.create')}}"><span class="glyphicon glyphicon-plus"> </span>Add more user</a>
         </div>
         <div class="form-inline pull-right">Search by name: 
           <div class="form-group">
@@ -15,9 +15,9 @@
         <thead>
           <tr>
             <th >Name</th>
-            <th>Country</th>
-            <th>Salary</th>
             <th>Email</th>
+            <th>Password</th>
+            <th>Actions</th>
             <th></th>
             <th></th>
           </tr>

@@ -17,4 +17,5 @@ use App\Http\Controllers\UserController;
 Route::get('/', [UserController::class ,'index'])->name('index');
 
 // * User Routes
-
+Route::get('/create', [UserController::class, 'create'])->name('user.create');
+Route::POST('/create', [UserController::class, 'store'])->name('user.store');
